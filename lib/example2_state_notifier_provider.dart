@@ -34,7 +34,7 @@ class Example2StateNotifierProvider extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Example2 '),
+        title: Text('Example2 State Notifier - Counter'),
       ),
       body: Center(
         child: Consumer(

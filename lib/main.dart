@@ -1,7 +1,6 @@
+import 'package:example1/example3_future_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-
-import 'example2_state_notifier_provider.dart';
 
 void main() {
   runApp(
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Example2StateNotifierProvider(),
+      home: const Example3FutureProvider(),
     );
   }
 }

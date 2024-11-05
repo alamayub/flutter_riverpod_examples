@@ -12,7 +12,7 @@ class Example1Provider extends ConsumerWidget {
     final date = ref.watch(currentData);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Example1 DateTime'),
+        title: Text('Example1 Provider - DateTime'),
       ),
       body: Center(
         child: Text(date.toIso8601String()),
