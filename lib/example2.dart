@@ -32,13 +32,18 @@ class Example2DateTime extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final count = ref.watch(counterProvider);
     return Scaffold(
       appBar: AppBar(
         title: Text('Example2 '),
       ),
       body: Center(
-        child: Text('COUNTER ${count?.toInt()}'),
+        child: Consumer(
+          builder: (context, ref, child) {
+            final count = ref.watch(counterProvider);
+            final text = count == null ? 'Press the Button' : 'Counter $count';
+            return Text(text);
+          },
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => ref.read(counterProvider.notifier).increment(), 
