@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'example5_notifier_provider.dart';
+import 'example6_state_notifier2.dart';
 
 void main() {
   runApp(
@@ -17,13 +17,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo Example 1',
+      title: 'Flutter Examples',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Example5FutureProvider(),
+      home: const Example6StateNotifierProvider2(),
     );
   }
 }
