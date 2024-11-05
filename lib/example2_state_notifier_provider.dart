@@ -27,8 +27,8 @@ class Counter extends StateNotifier<int?> {
 }
 
 final counterProvider = StateNotifierProvider<Counter, int?>((ref) => Counter());
-class Example2DateTime extends ConsumerWidget {
-  const Example2DateTime({super.key});
+class Example2StateNotifierProvider extends ConsumerWidget {
+  const Example2StateNotifierProvider({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

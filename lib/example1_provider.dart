@@ -4,8 +4,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 // simple provider
 final currentData = Provider((ref) => DateTime.now());
 
-class Example1DateTime extends ConsumerWidget {
-  const Example1DateTime({super.key});
+class Example1Provider extends ConsumerWidget {
+  const Example1Provider({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
