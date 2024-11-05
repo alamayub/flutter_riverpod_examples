@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'example1_datetime.dart';
+import 'example2.dart';
 
 void main() {
   runApp(
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Example1DateTime(),
+      home: const Example2DateTime(),
     );
   }
 }
